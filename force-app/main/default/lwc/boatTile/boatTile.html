@@ -1,0 +1,28 @@
+<!--
+  @description       :  shows a card of boat
+  @author            : Renzo Manuel Gomez Cesare
+  @group             : NTTDATA
+  @last modified on  : 11-02-2022
+  @last modified by  : Renzo Manuel Gomez Cesare
+-->
+<template>
+  <div onclick={selectBoat} class={tileClass}>
+    <div style={backgroundStyle} class="tile"></div>
+    <div class="lower-third">
+      <h1 class="slds-truncate slds-text-heading_medium">{boat.Name}</h1>
+      <h2 class="slds-truncate slds-text-heading_small">
+        {boat.Contact__r.Name}
+      </h2>
+      <div class="slds-text-body_small">
+        Price:
+        <lightning-formatted-number
+          value={boat.Price__c}
+          maximum-fraction-digits="2"
+          format-style="currency"
+        ></lightning-formatted-number>
+      </div>
+      <div class="slds-text-body_small">Length: {boat.Length__c}</div>
+      <div class="slds-text-body_small">Type: {boat.BoatType__r.Name}</div>
+    </div>
+  </div>
+</template>
