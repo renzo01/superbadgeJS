@@ -20,7 +20,7 @@ export default class BoatSearchResults extends LightningElement {
         console.log('OUTPUT : ',this.boatsData);
     }
     boatSelect(e){
-        console.log('Boat Selected Id :'+e.detail);
+        console.log('Boat Selected Id :'+e.detail.boatId);
     }
     handleSave(e){
         updateBoatList({data:e?.detail?.draftValues})

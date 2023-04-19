@@ -25,8 +25,17 @@
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>LightningBolt</name>
+	</types>
+	<types>
 		<members>boatMap</members>
+		<members>fiveStarRating</members>
 		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>LightningMessageChannel</name>
 	</types>
 	<types>
 		<members>*</members>
